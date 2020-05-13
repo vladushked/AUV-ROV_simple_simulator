@@ -72,7 +72,7 @@
 
   <gazebo reference="base_link">
     <material>Gazebo/White</material>
-    <gravity>0</gravity>
+    <gravity>false</gravity>
     <sensor name="imu_sensor" type="imu">
       <always_on>true</always_on>
       <update_rate>100</update_rate>
@@ -93,57 +93,57 @@
 
   <gazebo reference="motor_L_front_D_Link">
     <material>Gazebo/Blue</material>
-    <gravity>true</gravity>
+    <gravity>false</gravity>
   </gazebo>
 
   <gazebo reference="motor_R_front_D_Link">
     <material>Gazebo/Blue</material>
-    <gravity>true</gravity>
+    <gravity>false</gravity>
   </gazebo>
 
   <gazebo reference="motor_R_back_D_Link">
     <material>Gazebo/Blue</material>
-    <gravity>true</gravity>
+    <gravity>false</gravity>
   </gazebo>
 
   <gazebo reference="motor_L_back_D_Link">
     <material>Gazebo/Blue</material>
-    <gravity>true</gravity>
+    <gravity>false</gravity>
   </gazebo>
 
   <gazebo reference="motor_front_Up_Link">
     <material>Gazebo/Blue</material>
-    <gravity>true</gravity>
+    <gravity>false</gravity>
   </gazebo>
 
   <gazebo reference="motor_back_Up_Link">
     <material>Gazebo/Blue</material>
-    <gravity>true</gravity>
+    <gravity>false</gravity>
   </gazebo>
 
   <gazebo reference="motor_left_Up_Link">
     <material>Gazebo/Blue</material>
-    <gravity>true</gravity>
+    <gravity>false</gravity>
   </gazebo>
 
   <gazebo reference="motor_right_Up_Link">
     <material>Gazebo/Blue</material>
-    <gravity>true</gravity>
+    <gravity>false</gravity>
   </gazebo>
 
   <gazebo reference="main_housing_Link">
     <material>Gazebo/Turquoise</material>
-    <gravity>true</gravity>
+    <gravity>false</gravity>
   </gazebo>
 
   <gazebo reference="buoyancy_Link">
     <material>Gazebo/Red</material>
-    <gravity>true</gravity>
+    <gravity>false</gravity>
   </gazebo>
 
   <gazebo reference="batteries_Link">
     <material>Gazebo/White</material>
-    <gravity>true</gravity>
+    <gravity>false</gravity>
   </gazebo>
 
   <!--gazebo reference="camera_front">
@@ -158,7 +158,7 @@
 
   <gazebo reference="camera_front_right">
     <material>Gazebo/Green</material>
-    <gravity>true</gravity>
+    <gravity>false</gravity>
   </gazebo>
 
   <!--gazebo reference="camera_front">
@@ -198,7 +198,7 @@
   </gazebo-->
 
   <gazebo reference="camera_front_left">
-    <gravity>true</gravity>
+    <gravity>false</gravity>
     <material>Gazebo/Green</material>         
     <sensor type="multicamera" name="stereo_camera">
       <update_rate>30.0</update_rate>
@@ -206,8 +206,8 @@
 	<pose>0.05 -0.08 -0.03 -1.5708 0 0</pose>
         <horizontal_fov>1.3962634</horizontal_fov>
         <image>
-          <width>800</width>
-          <height>800</height>
+          <width>640</width>
+          <height>480</height>
           <format>R8G8B8</format>
         </image>
         <clip>
@@ -224,8 +224,8 @@
         <pose>0.05 -0.08 0.03 -1.5708 0 0</pose>
         <horizontal_fov>1.3962634</horizontal_fov>
         <image>
-          <width>800</width>
-          <height>800</height>
+          <width>640</width>
+          <height>480</height>
           <format>R8G8B8</format>
         </image>
         <clip>
@@ -258,7 +258,7 @@
   </gazebo>
 
   <gazebo reference="camera_bottom">
-    <gravity>0</gravity>
+    <gravity>false</gravity>
     <material>Gazebo/Blue</material>
     <sensor type="camera" name="camera_bottom">
       <update_rate>30.0</update_rate>
@@ -268,8 +268,8 @@
         <always_on>1</always_on>
         <horizontal_fov>1.3962634</horizontal_fov>
         <image>
-          <width>800</width>
-          <height>800</height>
+          <width>640</width>
+          <height>480</height>
           <format>R8G8B8</format>
         </image>
         <clip>

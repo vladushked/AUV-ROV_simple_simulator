@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <param name="gates_final" command="$(find xacro)/xacro.py '$(find gates_final)/urdf/gates_final.xacro'"/> 
+
+  <param name="starting_gates" command="$(find xacro)/xacro.py '$(find starting_gates)/urdf/starting_gates.xacro'"/>
+
+  <node name="gates_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+  args="-urdf -param gates_final -x 25 -y 8 -z 2 -R 0 -P 0 -Y 0 -model gates_final" />
+
+  <node name="starting_gates_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+  args="-urdf -param starting_gates -x 35 -y 0.8 -z 2.9 -R 0 -P 0 -Y 0 -model starting_gates" />
+
+</launch>
